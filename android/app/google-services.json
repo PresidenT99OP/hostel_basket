@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "627055707967",
+    "project_id": "hostel-basket",
+    "storage_bucket": "hostel-basket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627055707967:android:c77fed122ce96d79f0758a",
+        "android_client_info": {
+          "package_name": "com.example.hostel_basket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627055707967-s661a1kqqb9aatclq53kq8j0lqm5023u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj0fy0STek0-RHcZfiDa3XlfJb9LcCzpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627055707967-s661a1kqqb9aatclq53kq8j0lqm5023u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

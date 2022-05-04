@@ -1,7 +1,13 @@
+import 'package:hostel_basket/modals/UserData.dart';
+import 'package:hostel_basket/services/auth.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-import 'package:hostel_basket/screens/homepage.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:hostel_basket/wrapper.dart';
 
-void main(List<String> args) {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -15,8 +21,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SafeArea(child: HomePage()),
+    return StreamProvider<UserData>.value(
+      value: AuthService().user,
+      initialData: UserData(uid: ''),
+      child: const MaterialApp(
+        home: Wrapper(),
+      ),
     );
   }
 }
